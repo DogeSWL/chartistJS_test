@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+<nav class="navbar sticky-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Stock Tracker</a>
+  <form class="form-inline">
+    <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+  </form>
+</nav>
+
+<div class="container">
+   <div class="ct-chart ct-golden-section"></div>
+   <script type="text/javascript" src="static/lineG_test.js"></script>
+</div>
+
+{% endblock %}
